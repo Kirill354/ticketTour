@@ -1,0 +1,132 @@
+@use '../../styles/variables.scss';
+@use '../../styles/mixins.scss';
+
+.item-hero {
+    opacity: 0;
+    transform: translateY(50px);
+    width: 100%;
+    align-self: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid variables.$pinkDark;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    @include mixins.md {
+        padding-bottom: 12px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include mixins.md {
+            flex-direction: row;
+            gap: 56px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        @include mixins.md {
+            flex-grow: 1;
+            align-items: flex-start;
+            gap: 8px;
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+
+        @include mixins.md {
+            width: auto;
+            flex-grow: 0;
+            gap: 30px;
+        }
+    }
+
+    &__date {
+        span {
+            font-size: 28px;
+
+            @include mixins.xxs {
+                font-size: 30px;
+            }
+
+            @include mixins.xs {
+                font-size: 34px;
+            }
+
+            @include mixins.sm {
+                font-size: 36px;
+            }
+
+            @include mixins.md {
+                font-size: 42px;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    &__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+        @include mixins.md {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 8px;
+        }
+    }
+
+    &__place {
+        text-align: end;
+
+        @include mixins.md {
+            text-align: start;
+        }
+    }
+
+    &__button-wrapper {
+        a {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 6px 32px;
+            background-color: #fff;
+            border-radius: 30px;
+            border: 2px solid #705b65;
+            transition: all 0.2s;
+
+            &:hover {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            &:active {
+                transform: translateY(1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            @include mixins.xs {
+                padding: 8px 40px;
+            }
+
+            @include mixins.md {
+                padding: 12px 52px;
+            }
+        }
+    }
+}
