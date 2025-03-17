@@ -78,6 +78,20 @@
         }
     }
 
+    &__logo {
+        img {
+            @include mixins.xs {
+                width: 46px;
+                height: 39px;
+            }
+
+            @include mixins.md {
+                width: 53px;
+                height: 46px;
+            }
+        }
+    }
+
     &__info {
         width: 100%;
         display: flex;

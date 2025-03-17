@@ -4,6 +4,8 @@ import { useGSAP } from '@gsap/react';
 
 import { TicketItem } from '../../screens/Hero/data';
 
+import vkImage from '../../assets/vk_white.png';
+
 import './index.scss';
 
 interface ListItemProps {
@@ -12,7 +14,7 @@ interface ListItemProps {
 }
 
 export const ListItem: FC<ListItemProps> = ({ item, index }) => {
-    const { id, date, time, city, place } = item;
+    const { id, date, time, city, place, vkLink, ticketsLink } = item;
 
     useGSAP(() => {
         gsap.to(`#item-hero-${id}`, {
@@ -48,10 +50,12 @@ export const ListItem: FC<ListItemProps> = ({ item, index }) => {
                 </div>
                 <div className="item-hero__bottom">
                     <div className="item-hero__logo">
-                        <span>VK</span>
+                        <a href={vkLink} target="_blank">
+                            <img src={vkImage} alt="vk logo" />
+                        </a>
                     </div>
                     <div className="item-hero__button-wrapper jost-medium">
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href={ticketsLink} target="_blank" rel="noopener noreferrer">
                             билеты
                         </a>
                     </div>
