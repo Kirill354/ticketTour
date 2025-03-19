@@ -42,6 +42,7 @@ export const tourData: TicketItem[] = [
         time: '19.00',
         city: 'Благовещенск',
         place: 'ТРЦ Острова, GRAND ARENA',
+        ticketsLink: 'https://iframeab-pre2902.intickets.ru/seance/55832944/#abiframe',
     },
     {
         id: '5',
@@ -50,7 +51,7 @@ export const tourData: TicketItem[] = [
         city: 'Хабаровск',
         place: 'клуб Loona',
         ticketsLink: 'https://www.dvhab.ru/afisha/khabarovsk/event/224850',
-        vkLink: 'https://vk.com/club229723053',
+        vkLink: 'https://vk.com/club229782998',
     },
     {
         id: '6',
@@ -60,7 +61,7 @@ export const tourData: TicketItem[] = [
         place: 'ДК Авиастроителей',
         ticketsLink:
             'https://www.dvhab.ru/afisha/komsomolsk/event/224954#look=/afisha/purchase/events/224954/1096398/scheme',
-        vkLink: 'https://vk.com/club229723053',
+        vkLink: 'https://vk.com/gavrilina_kms',
     },
     {
         id: '7',
@@ -68,6 +69,7 @@ export const tourData: TicketItem[] = [
         time: '19.00',
         city: 'Южно-Сахалинск',
         place: 'ТЦ Столица, Конгресс Холл',
+        ticketsLink: 'https://bilet65.ru/concert/gavrilina_2025',
     },
     {
         id: '8',
@@ -76,7 +78,7 @@ export const tourData: TicketItem[] = [
         city: 'Уссурийск',
         place: 'ДОРА',
         ticketsLink: 'https://www.vl.ru/afisha/ussuriisk/event/225154',
-        vkLink: 'https://vk.com/club229723053',
+        vkLink: 'https://vk.com/club229782905',
     },
     {
         id: '9',
@@ -85,7 +87,7 @@ export const tourData: TicketItem[] = [
         city: 'Находка',
         place: 'Центр культуры',
         ticketsLink: 'https://www.vl.ru/afisha/nakhodka/event/225156',
-        vkLink: 'https://vk.com/club229723053',
+        vkLink: 'https://vk.com/club229782787',
     },
     {
         id: '10',
