@@ -5,7 +5,7 @@ export interface TicketItem {
     city: string;
     place: string;
     ticketsLink: string;
-    vkLink: string;
+    vkLink?: string;
 }
 
 export const tourData: TicketItem[] = [
